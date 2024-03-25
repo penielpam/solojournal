@@ -7,15 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Solo Journal</h1>
-        <form id="journalForm">
-            <input type="text" id="journalTitle" placeholder="Enter title" required>
-            <textarea id="journalContent" placeholder="Enter content" required></textarea>
-            <button type="submit">Save Entry</button>
-        </form>
-        <div id="journalEntries"></div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to Solo Journal</h2>
+            <p>This is your space to jot down your thoughts and memories.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Solo Journal</h2>
+            <p>Solo Journal is a simple and intuitive platform for keeping track of your personal thoughts, ideas, and experiences.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us.</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="journal" class="section">
+        <div class="container">
+            <h2>My Journal</h2>
+            <form id="journalForm">
+                <input type="text" id="journalTitle" placeholder="Enter title" required>
+                <textarea id="journalContent" placeholder="Enter content" required></textarea>
+                <button type="submit">Save Entry</button>
+            </form>
+            <div id="journalEntries"></div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
