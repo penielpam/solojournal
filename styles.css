@@ -2,7 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .container {
@@ -10,13 +33,14 @@ body {
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
+h2 {
     color: #007bff;
+}
+
+.section {
+    margin-bottom: 40px;
 }
 
 form input,
@@ -24,8 +48,6 @@ form textarea {
     width: 100%;
     margin-bottom: 10px;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 form button {
@@ -33,7 +55,6 @@ form button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -41,33 +62,12 @@ form button:hover {
     background-color: #0056b3;
 }
 
-.entry {
+#journalEntries .entry {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
-.entry:last-child {
+#journalEntries .entry:last-child {
     border-bottom: none;
-}
-
-.entry h2 {
-    color: #009688;
-}
-
-.entry p {
-    color: #333;
-}
-
-.editBtn {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.editBtn:hover {
-    background-color: #218838;
 }
